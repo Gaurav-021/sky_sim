@@ -7,12 +7,6 @@ First, be sure that your ArduPilot SITL environment is set correctly. The instal
   
 Follow the instructions here: http://wiki.ros.org/noetic/Installation/Ubuntu
 
-Remember to add the source command to your bashrc file:
-```
-echo "source /usr/share/gazebo/setup.sh" >> ~/.bashrc
-source ~/.bashrc
-```
-
 If you already have other ROS distros, be sure to remove their source commands from the bashrc file.
   
 ## 2. Install Gazebo 11
@@ -54,7 +48,7 @@ If you want to see the complete guide: https://ardupilot.org/dev/docs/sitl-with-
 
 Install the following catkin tools:
 ```
-sudo apt-get install python3-wstool python3-rosinstall-generator python3-catkin-lint python3-pip python3-catkin-tools
+sudo apt-get install python3-wstool python3-rosinstall-generator python3-catkin-lint python3-pip python3-catkin-tools -y
 pip3 install osrf-pycommon
 ```
 
