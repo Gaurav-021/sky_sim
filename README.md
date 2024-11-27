@@ -3,6 +3,12 @@
 
 First, be sure that your ArduPilot SITL environment is set correctly. The installation step-by-step is here: https://ardupilot.org/dev/docs/building-setup-linux.html#building-setup-linux
 
+Add these to .bashrc:
+```
+export PATH=$PATH:$HOME/ardupilot/Tools/autotest
+export PATH=/usr/lib/ccache:$PATH
+```
+
 ## 1. Install ROS Noetic
   
 Follow the instructions here: http://wiki.ros.org/noetic/Installation/Ubuntu
