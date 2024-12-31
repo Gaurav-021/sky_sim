@@ -19,6 +19,11 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
   
 Follow the instructions here: http://wiki.ros.org/noetic/Installation/Ubuntu
 
+Single-line installation:
+```
+wget -c https://raw.githubusercontent.com/qboticslabs/ros_install_noetic/master/ros_install_noetic.sh && chmod +x ./ros_install_noetic.sh && ./ros_install_noetic.sh
+```
+
 If you already have other ROS distros, be sure to remove their source commands from the bashrc file.
   
 ## 2. Install Gazebo 11
