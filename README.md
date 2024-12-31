@@ -2,11 +2,17 @@
 ## Quadcopter simulation with ArduPilot + Gazebo 11 + ROS Noetic
 
 First, be sure that your ArduPilot SITL environment is set correctly. The installation step-by-step is here: https://ardupilot.org/dev/docs/building-setup-linux.html#building-setup-linux
+```
+git clone --recurse-submodules https://github.com/ArduPilot/ardupilot
+cd ardupilot
+Tools/environment_install/install-prereqs-ubuntu.sh -y
+```
 
 Add these to .bashrc:
 ```
-export PATH=$PATH:$HOME/ardupilot/Tools/autotest
-export PATH=/usr/lib/ccache:$PATH
+echo 'export PATH=$PATH:$HOME/ardupilot/Tools/autotest"' >> ~/.bashrc
+echo 'export PATH=/usr/lib/ccache:$PATH"' >> ~/.bashrc
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
 ```
 
 ## 1. Install ROS Noetic
