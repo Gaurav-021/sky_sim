@@ -120,23 +120,23 @@
       <uri>model://sun</uri>
     </include>
 
-    <model name="iris">
+    <model name="scout_drone">
       <include>
         <uri>model://drone_with_camera_down</uri>
       </include>
       <pose> 0 0 0.05 0 0 0</pose>
     </model>
 
-    <model name="iris">
+    <model name="deliver_drone">
       <include>
-        <uri>model://drone_with_camera_down</uri>
+        <uri>model://drone_with_two_cameras</uri>
       </include>
-      <pose> 5 0 0.05 0 0 0</pose>
+      <pose> 2 2 0.05 0 0 0</pose>
     </model>
-
+    
     <model name="aruquinho">
       <include>
-        <uri>model://aruco_small</uri>
+        <uri>model://land_pad</uri>
       </include>
       <pose> 2 2 0 0 0 0</pose>
     </model>
